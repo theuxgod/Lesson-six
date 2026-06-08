@@ -2,6 +2,7 @@
 import { computed, onMounted, watch } from 'vue'
 import { useTheme } from 'vuetify'
 import LinkButton from '@/components/LinkButton.vue'
+import WeatherWidget from '@/components/WeatherWidget.vue'
 
 const theme = useTheme()
 
@@ -65,6 +66,8 @@ const links = [
               :icon="link.icon"
             />
           </div>
+
+          <WeatherWidget class="mt-6" />
         </v-card>
       </v-col>
     </v-row>
